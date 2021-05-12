@@ -15,9 +15,16 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-column-gap: 16px;
-	margin: auto;
 	margin-left: var(--margin);
-	
+	margin-right: var(--margin);
+}
+
+.Events .eventHolder > *:first-child {
+	margin-right: auto;
+}
+
+.Events .eventHolder > *:last-child {
+	margin-left: auto;
 }
 
 .Events .upcomingShows .titleHolder {
@@ -49,4 +56,12 @@
 	font-size: var(--miniSize);
 	color: #E5C558;
 	text-align: right;
+}
+
+/*media queries*/
+@media only screen and (min-width: 1440px) {
+	.Events .eventHolder{
+		--doubleMargin: calc(var(--margin) * 2);
+		width: calc(100vw - var(--doubleMargin));
+	}
 }
