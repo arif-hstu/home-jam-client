@@ -8,6 +8,9 @@ function Header() {
 	return (
 		<div className='Header'>
 			<Navbar />
+			<div className="overlay">
+			This is overlay
+			</div>
 		</div>
 	)
 }

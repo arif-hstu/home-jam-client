@@ -1,8 +1,26 @@
 .Header {
 	background-image: url('../../../resources/images/headerBg.png');
-	  background-size: cover;
-	  background-position: center center;
+	background-size: cover;
+	background-position: center center;
 	height: 862px;
+	position: relative;
+}
+
+.Header > *:first-child {
+	z-index: 999;
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+
+.Header .overlay {
+	background: linear-gradient(180deg, rgba(5, 11, 20, 0.28) 0%, rgba(1, 13, 32, 0.69) 67.53%, #0A0B1A 85.33%);
+	height: 862px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
 }
 
 
