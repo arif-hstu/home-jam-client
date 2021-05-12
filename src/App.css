@@ -1,11 +1,21 @@
 :root {
 	--primaryFont: 'Libre Baskerville', serif;
 	--secondaryFont: 'Open Sans';
+	--tertiaryFont: 'Nunito', sans-serif;
+
 	--bolder: 700;
 	--regular: 400;
+
+	--regularSize: 24px;
+	--hugeSize: 80px;
+	--largerSize: 40px;
 
 	--margin: 10.42%;
 	--primaryColor: white;
 	--secondaryColor: black;
 
+}
+
+body {
+	color: var(--primaryColor);
 }

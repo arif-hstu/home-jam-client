@@ -2,25 +2,80 @@
 	background-image: url('../../../resources/images/headerBg.png');
 	background-size: cover;
 	background-position: center center;
-	height: 862px;
+	height: 860px;
 	position: relative;
 }
 
 .Header > *:first-child {
 	z-index: 999;
-	position: fixed;
+	position: relative;
 	left: 0;
 	right: 0;
 }
 
 .Header .overlay {
 	background: linear-gradient(180deg, rgba(5, 11, 20, 0.28) 0%, rgba(1, 13, 32, 0.69) 67.53%, #0A0B1A 85.33%);
-	height: 862px;
+	height: 860px;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 10;
+}
+
+.Header .mainContent {
+	position: absolute;
+	z-index: 998;
+	margin-left: var(--margin);
+	margin-right: var(--margin);
+	top: 248px;
+	left: 0;
+	right: 0;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.Header .titleHolder h2 {
+	font-family: var(--primaryFont);
+	font-size: var(--hugeSize);
+	font-weight: var(--bolder);
+	line-height: 96px;
+	margin-bottom: 24px;
+	margin-top: 0;
+}
+
+.Header .titleHolder p {
+	font-family: var(--tertiaryFont);
+	font-size: var(--regularSize);
+	font-weight: var(--regular);
+	margin: 0;
+	line-height: 32px;
+}
+
+.Header .mainContent .scroll {
+	top: 402px;
+}
+
+.Header .mainContent .dashboard{
+	height: 208px;
+	width: 1140px;
+	margin-left: 5%;
+	margin-right: 5%;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.Header .mainContent .dashboard > * {
+	display: flex;
+	margin: auto;
+	position: relative;
+}
+
+.Header .dashboard img {
+	height: 208px;
+	width: 208px;
 }
 
 
