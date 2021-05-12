@@ -15,17 +15,16 @@
 	border-radius: 8px;
 	left: 8px;
 	top: -8px;
-	background-image: linear-gradient(to bottom, #301A68, #234C97
-);
+	background-image: linear-gradient(to bottom, #301A68, #234C97);
 	position: absolute;
 	z-index: -5;
 }
 
-.Event > img {
+.Event  > img {
 	margin-bottom: 27px;
 }
 
-.Event > p {
+.Event   > p {
 	margin: 0;
 	margin-left: 16px;
 	background-color: #E5C558;
@@ -36,7 +35,7 @@
 	border-radius: 1px;
 }
 
-.Event > h4 {
+.Event  > h4 {
 	margin: 0;
 	font-family: var(--primaryFont);
 	font-size: 20px;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Scroll } from 'framer';
 
 import './Events.css';
 import Event from '../Event/Event';
@@ -14,11 +15,19 @@ function Events() {
 						<small>View All</small>
 					</p>
 				</div>
-				<div className="eventHolder">
-					{
-						fakeEventData.map((event, key) => <Event key={key} event={event} />)
-					}					
-				</div>
+				<Scroll
+					className='scroll'
+					direction="horizontal"
+					width={'100vw'}
+					height={'395px'}
+					wheelEnabled={false}
+				>
+					<div className="eventHolder">
+						{
+							fakeEventData.map((event, key) => <Event key={key} event={event} />)
+						}
+					</div>
+				</Scroll>
 			</div>
 		</div>
 	)

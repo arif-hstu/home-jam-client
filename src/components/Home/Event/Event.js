@@ -8,7 +8,7 @@ import ticket from '../../../resources/icons/ticket.svg';
 function Event(props) {
 	const { artistImg, artistName, category } = props.event;
 	return (
-		<div className='Event'>
+		<div className="Event">
 			<img src={artistImg} alt={artistName} />
 			<p className="highlight">
 				{category}
@@ -24,7 +24,7 @@ function Event(props) {
 					<img src={arrow} alt="Arrow" />
 				</div>
 				<div className="ticketHolder">
-					<img src={ticket} alt="" /> 
+					<img src={ticket} alt="" />
 				</div>
 			</div>
 		</div>
