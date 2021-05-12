@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './Event.css';
 import bennyDayal from '../../../resources/images/bennyDayal.png';
 import arrow from '../../../resources/icons/arrow.svg';
 import ticket from '../../../resources/icons/ticket.svg';
+import ticketFill from '../../../resources/icons/ticketFill.svg';
 
 function Event(props) {
 	const { artistImg, artistName, category } = props.event;
+	const [alterTicket, setAlterTicket] = useState(false);
+	
 	return (
 		<div className="Event">
 			<img src={artistImg} alt={artistName} />
@@ -23,8 +26,16 @@ function Event(props) {
 					</p>
 					<img src={arrow} alt="Arrow" />
 				</div>
-				<div className="ticketHolder">
-					<img src={ticket} alt="" />
+				<div
+					onMouseEnter={() => setAlterTicket(true)}
+					onMouseLeave={() => setAlterTicket(false)}
+					className="ticketHolder"
+				>
+					{
+						alterTicket ? 
+						<img src={ticketFill} alt="Ticket" /> :
+						<img src={ticket} alt="Ticket" />
+					}
 				</div>
 			</div>
 		</div>

@@ -23,6 +23,7 @@
 
 .Event  > img {
 	margin-bottom: 27px;
+	cursor: pointer;
 }
 
 .Event   > p {
@@ -85,7 +86,16 @@
 }
 
 .Event .infoHolder .ticketHolder {
+	cursor: pointer;
 	position: relative;
+	top: 0;
+	left: -26.74px;
+	z-index: 9999;
+}
+
+.Event .infoHolder .ticketHolder img {
+	width: 17.88px;
+	height: 23.78px;
 }
 
 .Event .infoHolder .ticketHolder::after {
@@ -94,6 +104,6 @@
 	border-left: 3px solid #292a3e;
 	position: absolute;
 	content: '';
-	top: -7px;
-	right: 68px;
+	top: -3px;
+	right: 52px;
 }
