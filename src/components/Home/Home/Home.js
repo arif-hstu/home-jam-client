@@ -1,11 +1,14 @@
 import React from 'react';
 
-import './Home.css'; 
+import './Home.css';
+import Header from '../Header/Header';
+import Events from '../Events/Events';
 
 function Home() {
 	return (
-		<div>
-			This is Home
+		<div className='Home'>
+			<Header />
+			<Events />
 		</div>
 	)
 }
