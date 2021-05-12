@@ -14,7 +14,8 @@ function Reviews() {
 				<div className="titleHolder">
 					<h3>Reviews</h3>
 					<div className="pagination">
-						<p>1/12</p>
+						<p>1</p>
+						<p>/ 12</p>
 						<img src={leftArrow} alt="Arrow" />
 						<img src={rightArrow} alt="Arrow" />
 					</div> 

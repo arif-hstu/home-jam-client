@@ -45,7 +45,22 @@
 	font-family: var(--tertiaryFont);
 	font-size: var(--miniSize);	
 	font-weight: 600;
-	line-height: 40px;
+	line-height: 24px;
+	margin: 2px;
+	opacity: 0.8;
+}
+
+.Reviews .allReviews .titleHolder .pagination p:last-of-type{
+	margin-right: 26.5px;
+	opacity: 0.5;
+}
+
+.Reviews .pagination > img {
+	opacity: 0.8;
+}
+
+.Reviews .pagination > img:first-of-type {
+	margin-right: 21px;
 }
 
 .Reviews .allReviews .titleHolder h3 {
