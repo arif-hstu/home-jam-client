@@ -3,10 +3,22 @@
 	width: 268px;
 	background-color: #111229;
 	border-radius: 8px 8px 8px 8px;
-	/*box-shadow: -8px -8px 0px line*/
-
 	display: flex;
 	flex-direction: column;
+	position: relative;
+}
+
+.Event::after {
+	content: '';
+	width: inherit;
+	height: inherit;
+	border-radius: 8px;
+	left: 8px;
+	top: -8px;
+	background-image: linear-gradient(to bottom, #301A68, #234C97
+);
+	position: absolute;
+	z-index: -5;
 }
 
 .Event > img {

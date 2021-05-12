@@ -13,7 +13,7 @@ function Event() {
 				Folk
 			</p>
 			<h4>
-				Benny Dayal
+				Benny Day al
 			</h4>
 			<div className="infoHolder">
 				<div className="info">
