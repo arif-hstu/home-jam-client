@@ -1,7 +1,9 @@
+
 .Reviews .allReviews {
 	margin-top: 498px;
 	margin-left: var(--margin);
 	margin-right: var(--margin);
+	margin-bottom: 401px;
 }
 
 .Reviews .scroll {
@@ -34,6 +36,18 @@
 	align-items: center;
 }
 
+.Reviews .allReviews .titleHolder .pagination{
+	display: flex;
+	justify-content: space-between;
+}
+
+.Reviews .allReviews .titleHolder .pagination p{
+	font-family: var(--tertiaryFont);
+	font-size: var(--miniSize);	
+	font-weight: 600;
+	line-height: 40px;
+}
+
 .Reviews .allReviews .titleHolder h3 {
 	font-family: var(--primaryFont);
 	font-size: var(--largerSize);	
@@ -50,13 +64,6 @@
 	content: '';
 	top: 48px;
 	left: 0px;
-}
-
-.Reviews .allReviews .titleHolder small {
-	font-family: var(--tertiaryFont);
-	font-size: var(--miniSize);
-	color: #E5C558;
-	text-align: right;
 }
 
 /*media queries*/

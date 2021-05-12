@@ -1,27 +1,28 @@
 import bennyDayal from '../../../resources/images/bennyDayal.png';
-import vijayYesudas from '../../../resources/images/vijayYesudas.png';
-import andreaJeremiah from '../../../resources/images/andreaJeremiah.png';
-import shilpaRao from '../../../resources/images/shilpaRao.png';
+import hellenJummy from '../../../resources/images/hellenJummy.png';
+import isaac from '../../../resources/images/isaac.png';
+import usa from '../../../resources/icons/usa.svg';
+import itali from '../../../resources/icons/itali.svg';
 
 const fakeReviewData = [
 	{
-		reviewerImg: bennyDayal,
-		countryImg: '',
-		countryName: '',
-		reviewerName: '',
-		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi assumenda nostrum.'
+		reviewerImg: hellenJummy,
+		countryImg: usa,
+		countryName: 'PALO ALTO, CA',
+		reviewerName: 'Hellen Jummy',
+		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi assumenda nostrum eligendi assumenda nostrum.'
 	},{
-		reviewerImg: vijayYesudas,
-		countryImg: '',
-		countryName: '',
-		reviewerName: '',
-		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi assumenda nostrum.'
+		reviewerImg: isaac,
+		countryImg: itali,
+		countryName: 'PALO ALTO, CA',
+		reviewerName: 'Isaac Oluwatemilorun',
+		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi assumenda nostrum eligendi assumenda nostrum.'
 	},{
-		reviewerImg: andreaJeremiah,
-		countryImg: '',
-		countryName: '',
-		reviewerName: '',
-		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi assumenda nostrum.'
+		reviewerImg: hellenJummy,
+		countryImg: usa,
+		countryName: 'PALO ALTO, CA',
+		reviewerName: 'Hellen Jummy',
+		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi assumenda nostrum eligendi assumenda nostrum.'
 	},
 ];
 

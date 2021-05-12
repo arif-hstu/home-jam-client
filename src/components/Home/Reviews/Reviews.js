@@ -2,8 +2,10 @@ import React from 'react';
 import { Scroll } from 'framer';
 
 import './Reviews.css';
-import Event from '../Event/Event';
+import Review from '../Review/Review';
 import fakeReviewData from './fakeReviewData';
+import leftArrow from '../../../resources/icons/leftArrow.svg';
+import rightArrow from '../../../resources/icons/rightArrow.svg';
 
 function Reviews() {
 	return (
@@ -11,20 +13,22 @@ function Reviews() {
 			<div className="allReviews">
 				<div className="titleHolder">
 					<h3>Reviews</h3>
-					<p>
-						<small>View All</small>
-					</p>
+					<div className="pagination">
+						<p>1/12</p>
+						<img src={leftArrow} alt="Arrow" />
+						<img src={rightArrow} alt="Arrow" />
+					</div> 
 				</div>
 				<Scroll
 					className='scroll'
 					direction="horizontal"
 					width={'100vw'}
-					height={'256px'}
+					height={'260px'}
 					wheelEnabled={false}
 				>
 					<div className="eventHolder">
 						{
-							fakeReviewData.map((event, key) => <Event key={key} event={event} />)
+							fakeReviewData.map((review, key) => <Review key={key} review={review} />)
 						}
 					</div>
 				</Scroll>

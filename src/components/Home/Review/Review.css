@@ -1,8 +1,9 @@
 .Review {
-	height: 387px;
-	width: 268px;
-	background-color: #111229;
+	height: 248px;
+	width: 360px;
 	border-radius: 8px 8px 8px 8px;
+	background-color: #0a0b1a;
+	border: 2px solid #E5AF56;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -16,84 +17,63 @@
 	border-radius: 8px;
 	left: 8px;
 	top: -8px;
-	background-image: linear-gradient(to bottom, #301A68, #234C97);
+	background-image: linear-gradient(143.63deg, #276C73 5.43%, #5293E8 110.6%);
 	position: absolute;
 	z-index: -5;
 }
 
-.Review  > img {
-	margin-bottom: 27px;
+.Review p {
+	margin: 0;
 }
 
-.Review   > p {
-	margin: 0;
-	margin-left: 16px;
-	background-color: #E5C558;
-	width: min-content;
-	padding: 2px 6px 2px 6px;
-	line-height: 18px;
-	color: #682F26;
-	border-radius: 1px;
+.Review .reviewerInfo {
+	margin: 24px 36px 0 24px;
+	display: grid;
+	grid-template-columns: 64.5px 1fr;
+	justify-content: center;
+	align-items: center;
 }
 
-.Review  > h4 {
-	margin: 0;
-	font-family: var(--primaryFont);
-	font-size: 20px;
+.Review .nameHolder {
+	font-family: var(--quaternaryFont);
+	font-size: var(--miniSize);
 	line-height: 32px;
 	font-weight: var(--bolder);
-	margin-top: 10px;
-	margin-bottom: 18px;
-	margin-left: 16px;
 }
 
-.Review .infoHolder .info {
-	margin: 0;
-	margin-left: 16px;
+.Review .imgHolder img {
+	width: 48px;
+	height: 48px;
 }
 
-.Review .infoHolder {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	height: 32px;
-	margin-top: auto;
-	margin-bottom: 24px;
+.Review .reviewHolder {
+	margin: 0px 24px 36px 24px;
 }
 
-.Review .infoHolder > *:last-child {
-	margin-left: auto;
-}
-
-.Review .infoHolder .info p {
-	margin: 0;
-	font-size: var(--miniSize);
-	font-weight: 600;
-	line-height: 32px;
+.Review .reviewHolder p {
+	margin-top: 28px;
 	font-family: var(--tertiaryFont);
 	font-size: var(--miniSize);
-	color: #0259EB;
+	line-height: 24px;
+	font-weight: var(--regular);
 }
 
-.Review .info {
+.Review .details {
 	display: flex;
-}
- 
-.Review .info img {
-	margin-left: 10.25px;
-	width: 18.75px;
+	align-items: center;
 }
 
-.Review .infoHolder .ticketHolder {
-	position: relative;
+.Review .details p {
+	margin-left: 8px;
+	font-family: var(--quinaryFont);
+	font-weight: var(--regular);
+	font-size: 11px;
+	line-height: 16px;
+	color: #E5C558;
 }
 
-.Review .infoHolder .ticketHolder::after {
-	width: 0;
-	height: 32px;
-	border-left: 3px solid #292a3e;
-	position: absolute;
-	content: '';
-	top: -7px;
-	right: 68px;
-}
+
+
+
+
+
