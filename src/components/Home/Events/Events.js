@@ -4,8 +4,6 @@ import './Events.css';
 import Event from '../Event/Event';
 import fakeEventData from './fakeEventData';
 
-console.log(fakeEventData);
-
 function Events() {
 	return (
 		<div className='Events'>
@@ -17,7 +15,9 @@ function Events() {
 					</p>
 				</div>
 				<div className="eventHolder">
-					<Event />					
+					{
+						fakeEventData.map((event, key) => <Event key={key} event={event} />)
+					}					
 				</div>
 			</div>
 		</div>

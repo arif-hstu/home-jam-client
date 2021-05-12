@@ -5,15 +5,16 @@ import bennyDayal from '../../../resources/images/bennyDayal.png';
 import arrow from '../../../resources/icons/arrow.svg';
 import ticket from '../../../resources/icons/ticket.svg';
 
-function Event() {
+function Event(props) {
+	const { artistImg, artistName, category } = props.event;
 	return (
 		<div className='Event'>
-			<img src={bennyDayal} alt="Benny Dayal" />
+			<img src={artistImg} alt={artistName} />
 			<p className="highlight">
-				Folk
+				{category}
 			</p>
 			<h4>
-				Benny Day al
+				{artistName}
 			</h4>
 			<div className="infoHolder">
 				<div className="info">

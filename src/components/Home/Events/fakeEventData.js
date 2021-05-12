@@ -1,20 +1,25 @@
+import bennyDayal from '../../../resources/images/bennyDayal.png';
+import vijayYesudas from '../../../resources/images/vijayYesudas.png';
+import andreaJeremiah from '../../../resources/images/andreaJeremiah.png';
+import shilpaRao from '../../../resources/images/shilpaRao.png';
+
 const fakeEventData = [
 	{
-		artistImg: '../../../resources/images/bennyDayal.png',
+		artistImg: bennyDayal,
 		category: 'Folk',
 		artistName: 'Benny Dayal'
 	},{
-		artistImg: '../../../resources/images/vajayYasudas.png',
+		artistImg: vijayYesudas,
 		category: 'Bollywood',
 		artistName: 'Vijay Yasudas'
 	},{
-		artistImg: '../../../resources/images/andreaJeremiah.png',
+		artistImg: andreaJeremiah,
 		category: 'Folk',
 		artistName: 'Andrea Jeremiah'
 	},{
-		artistImg: '../../../resources/images/shilpaRao.png',
-		category: 'Shilpa Rao',
-		artistName: 'Folk'
+		artistImg: shilpaRao,
+		category: 'Folk',
+		artistName: 'Shilpa Rao'
 	}
 ];
 
