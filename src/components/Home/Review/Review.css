@@ -1,0 +1,99 @@
+.Review {
+	height: 387px;
+	width: 268px;
+	background-color: #111229;
+	border-radius: 8px 8px 8px 8px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-self: center;
+}
+
+.Review::after {
+	content: '';
+	width: inherit;
+	height: inherit;
+	border-radius: 8px;
+	left: 8px;
+	top: -8px;
+	background-image: linear-gradient(to bottom, #301A68, #234C97);
+	position: absolute;
+	z-index: -5;
+}
+
+.Review  > img {
+	margin-bottom: 27px;
+}
+
+.Review   > p {
+	margin: 0;
+	margin-left: 16px;
+	background-color: #E5C558;
+	width: min-content;
+	padding: 2px 6px 2px 6px;
+	line-height: 18px;
+	color: #682F26;
+	border-radius: 1px;
+}
+
+.Review  > h4 {
+	margin: 0;
+	font-family: var(--primaryFont);
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: var(--bolder);
+	margin-top: 10px;
+	margin-bottom: 18px;
+	margin-left: 16px;
+}
+
+.Review .infoHolder .info {
+	margin: 0;
+	margin-left: 16px;
+}
+
+.Review .infoHolder {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	height: 32px;
+	margin-top: auto;
+	margin-bottom: 24px;
+}
+
+.Review .infoHolder > *:last-child {
+	margin-left: auto;
+}
+
+.Review .infoHolder .info p {
+	margin: 0;
+	font-size: var(--miniSize);
+	font-weight: 600;
+	line-height: 32px;
+	font-family: var(--tertiaryFont);
+	font-size: var(--miniSize);
+	color: #0259EB;
+}
+
+.Review .info {
+	display: flex;
+}
+ 
+.Review .info img {
+	margin-left: 10.25px;
+	width: 18.75px;
+}
+
+.Review .infoHolder .ticketHolder {
+	position: relative;
+}
+
+.Review .infoHolder .ticketHolder::after {
+	width: 0;
+	height: 32px;
+	border-left: 3px solid #292a3e;
+	position: absolute;
+	content: '';
+	top: -7px;
+	right: 68px;
+}

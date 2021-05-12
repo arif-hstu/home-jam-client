@@ -1,40 +1,40 @@
-.Events .upcomingShows {
-	margin-top: 104px;
+.Reviews .allReviews {
+	margin-top: 498px;
 	margin-left: var(--margin);
 	margin-right: var(--margin);
 }
 
-.Events .scroll {
-	top: 1085px;
+.Reviews .scroll {
 	left: 0;
+	top: 1686px;
 }
 
-.Events .eventHolder{
+.Reviews .eventHolder{
 	--doubleMargin: calc(var(--margin) * 2);
 	width: calc(1440px - var(--doubleMargin));
 	top: 8px;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 16px;
 	margin-left: var(--margin);
 	margin-right: var(--margin);
 }
 
-.Events .eventHolder > *:first-child {
+.Reviews .eventHolder > *:first-child {
 	margin-right: auto;
 }
 
-.Events .eventHolder > *:last-child {
+.Reviews .eventHolder > *:last-child {
 	margin-left: auto;
 }
 
-.Events .upcomingShows .titleHolder {
+.Reviews .allReviews .titleHolder {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.Events .upcomingShows .titleHolder h3 {
+.Reviews .allReviews .titleHolder h3 {
 	font-family: var(--primaryFont);
 	font-size: var(--largerSize);	
 	font-weight: var(--regular);
@@ -42,7 +42,7 @@
 	position: relative;
 }
 
-.Events .upcomingShows .titleHolder h3::after {
+.Reviews .allReviews .titleHolder h3::after {
 	width: 48px;
 	height: 3px;
 	border-top: 3px solid #0259EB;
@@ -52,7 +52,7 @@
 	left: 0px;
 }
 
-.Events .upcomingShows .titleHolder small {
+.Reviews .allReviews .titleHolder small {
 	font-family: var(--tertiaryFont);
 	font-size: var(--miniSize);
 	color: #E5C558;
@@ -61,7 +61,7 @@
 
 /*media queries*/
 @media only screen and (min-width: 1440px) {
-	.Events .eventHolder{
+	.Reviews .eventHolder{
 		--doubleMargin: calc(var(--margin) * 2);
 		width: calc(100vw - var(--doubleMargin));
 	}

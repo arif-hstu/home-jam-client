@@ -54,6 +54,7 @@
 
 .Header .mainContent .scroll {
 	top: 402px;
+	left: calc(var(--margin) * -1);
 }
 
 .Header .mainContent .dashboardHolder{
@@ -64,9 +65,10 @@
 }
 
 .Header .mainContent .dashboard{
-	width: 1140px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	--doubleMargin: calc(var(--margin) * 2);
+	width: calc(1440px - var(--doubleMargin));
+	display: flex;
+	justify-content: space-between;
 }
 
 .Header .mainContent .dashboard > * {

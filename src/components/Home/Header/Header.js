@@ -23,8 +23,9 @@ function Header() {
 				<Scroll
 					className='scroll'
 					direction="horizontal"
-					width={'100%'}
 					height={'208px'}
+					width={'100vw'}
+					wheelEnabled={false}
 				>
 					<div className="dashboardHolder">
 						<div className="dashboard">
