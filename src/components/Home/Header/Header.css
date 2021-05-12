@@ -57,12 +57,18 @@
 	top: 402px;
 }
 
-.Header .mainContent .dashboard{
+.Header .mainContent .dashboardHolder{
 	height: 208px;
-	width: 1140px;
-	margin-left: 5%;
-	margin-right: 5%;
+/*	margin-left: 5%;
+	margin-right: 5%;*/
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Header .mainContent .dashboard{
+	width: 1140px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
@@ -76,6 +82,42 @@
 .Header .dashboard img {
 	height: 208px;
 	width: 208px;
+}
+
+.Header .dashboard > * > .infoHolder {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.Header .dashboard > * > .infoHolder > img {
+	width: 28.01px;
+	height: 25px;
+	margin-bottom: 12px;
+}
+
+.Header .dashboard > * > .infoHolder .counter {
+	font-family: var(--primaryFont);
+	font-size: var(--regularSize);
+	line-height: 32px;
+}
+
+.Header .dashboard > * > .infoHolder small {
+	font-family: var(--tertiaryFont);
+	font-size: 16px;
+	line-height: 32px;
+}
+
+
+.Header .dashboard > * > .infoHolder p {
+	margin: 2px;
+	line-height: 32px;
 }
 
 

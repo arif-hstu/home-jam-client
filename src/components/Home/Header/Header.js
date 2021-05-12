@@ -6,6 +6,8 @@ import './Header.css';
 import headerBg from '../../../resources/images/headerBg.png';
 import lader from '../../../resources/icons/lader.svg';
 import laderInactive from '../../../resources/icons/laderInactive.svg';
+import heart from '../../../resources/icons/heart.svg';
+import events from '../../../resources/icons/events.svg';
 
 function Header() {
 	return (
@@ -24,18 +26,56 @@ function Header() {
 					width={'100%'}
 					height={'208px'}
 				>
-					<div className="dashboard">
-						<div className="active">
-							<img src={lader} alt="" />
-						</div>
-						<div className="default">
-							<img src={laderInactive} alt="" />
-						</div>
-						<div className="default">
+					<div className="dashboardHolder">
+						<div className="dashboard">
+							<div className="active">
+								<img src={lader} alt="" />
+								<div className="infoHolder">
+									<img src={heart} alt="" />
+									<p className="counter">
+										456
+									</p>
+									<p className="label">
+										<small>Likes everyday</small>
+									</p>
+								</div>
+							</div>
+							<div className="default">
 								<img src={laderInactive} alt="" />
-						</div>
-						<div className="default">
+								<div className="infoHolder">
+									<img src={events} alt="" />
+									<p className="counter">
+										0
+									</p>
+									<p className="label">
+										<small>Label</small>
+									</p>
+								</div>
+							</div>
+							<div className="default">
 								<img src={laderInactive} alt="" />
+								<div className="infoHolder">
+									<img src={events} alt="" />
+									<p className="counter">
+										0
+									</p>
+									<p className="label">
+										<small>Label</small>
+									</p>
+								</div>
+							</div>
+							<div className="default">
+								<img src={laderInactive} alt="" />
+								<div className="infoHolder">
+									<img src={events} alt="" />
+									<p className="counter">
+										0
+									</p>
+									<p className="label">
+										<small>Label</small>
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</Scroll>
