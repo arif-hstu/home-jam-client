@@ -1,0 +1,11 @@
+:root {
+	--primaryFont: 'Libre Baskerville', serif;
+	--secondaryFont: 'Open Sans';
+	--bolder: 700;
+	--regular: 400;
+
+	--margin: 10.42%;
+	--primaryColor: white;
+	--secondaryColor: black;
+
+}

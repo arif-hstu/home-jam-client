@@ -1,0 +1,43 @@
+.Navbar {
+	background-color: tomato;
+	margin-left: var(--margin);
+	margin-right: var(--margin);
+	height: 54px;
+
+	display: grid;
+	grid-template-columns: 86px 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.Navbar .logHolder img {
+	height: 44px;
+	width: 86px;
+}
+
+.Navbar .navHolder {
+	margin-left: auto;
+	width: 297px;
+
+	display: grid;
+	grid-template-columns: 8.62px 1fr 1fr 1fr 0.5fr;
+}
+
+.Navbar .navHolder > *{
+	margin: auto;
+	color: var(--primaryColor);
+	text-decoration: none;
+}
+
+.Navbar .navHolder > *:last-child{
+	margin-right: 0;
+}
+
+.Navbar .navHolder > *:first-child{
+	margin-right: -10px;
+}
+
+/*media queries*/
+@media only screen and (max-width: 325) {
+
+}
