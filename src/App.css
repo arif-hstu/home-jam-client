@@ -2,20 +2,22 @@
 	--primaryFont: 'Libre Baskerville', serif;
 	--secondaryFont: 'Open Sans';
 	--tertiaryFont: 'Nunito', sans-serif;
+	--bgcolor: #0a0b1a;
 
 	--bolder: 700;
 	--regular: 400;
 
 	--regularSize: 24px;
 	--hugeSize: 80px;
-	--largerSize: 40px;
+	--largerSize: 32px;
+	--miniSize: 16px;
 
 	--margin: 10.42%;
 	--primaryColor: white;
 	--secondaryColor: black;
-
 }
 
 body {
 	color: var(--primaryColor);
+	background-color: var(--bgcolor);
 }

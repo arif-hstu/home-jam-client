@@ -1,3 +1,40 @@
 .Events {
-	background-color: tomato;
+	
+}
+
+.upcomingShows {
+	margin-top: 126px;
+	margin-left: var(--margin);
+	margin-right: var(--margin);
+}
+
+.upcomingShows .titleHolder {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.upcomingShows .titleHolder h3 {
+	font-family: var(--primaryFont);
+	font-size: var(--largerSize);	
+	font-weight: var(--regular);
+	line-height: 40px;
+	position: relative;
+}
+
+.upcomingShows .titleHolder h3::after {
+	width: 48px;
+	height: 3px;
+	border-top: 3px solid #0259EB;
+	position: absolute;
+	content: '';
+	top: 48px;
+	left: 0px;
+}
+
+.upcomingShows .titleHolder small {
+	font-family: var(--tertiaryFont);
+	font-size: var(--miniSize);
+	color: #E5C558;
+	text-align: right;
 }

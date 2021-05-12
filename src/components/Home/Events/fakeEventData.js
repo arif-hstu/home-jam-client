@@ -1,4 +1,4 @@
-export const fakeEventData = [
+const fakeEventData = [
 	{
 		artistImg: '../../../resources/images/bennyDayal.png',
 		category: 'Folk',
@@ -17,4 +17,6 @@ export const fakeEventData = [
 		artistName: 'Folk'
 	}
 ];
+
+export default fakeEventData;
 
