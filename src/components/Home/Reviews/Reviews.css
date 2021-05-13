@@ -90,6 +90,13 @@
 	}
 }
 
+/*media queries*/
+@media only screen and (min-width: 768px) {
+	.Reviews .reviewHolder{
+		--doubleMargin: calc(var(--margin) * 2);
+		width: calc(100vw - var(--doubleMargin));
+	}
+}
 
 @media only screen and (max-width: 768px) {
 	.Reviews .allReviews {

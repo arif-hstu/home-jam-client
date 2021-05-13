@@ -1,6 +1,6 @@
 .Review {
 	height: 248px;
-	width: 360px;
+	width: 25vw;
 	border-radius: 8px 8px 8px 8px;
 	background-color: #0a0b1a;
 	border: 2px solid #E5AF56;
@@ -27,7 +27,7 @@
 }
 
 .Review .reviewerInfo {
-	margin: 24px 36px 0 24px;
+	margin: 24px 2px 0 24px;
 	display: grid;
 	grid-template-columns: 64.5px 1fr;
 	justify-content: center;
@@ -47,12 +47,13 @@
 }
 
 .Review .reviewHolder {
-	margin: 0px 24px 36px 24px;
-	width: 300%;
+	margin: 0px 24px 3vw 24px;
+	width: 250%;
+	height: 100%;
 }
 
 .Review .reviewHolder p {
-	margin-top: 28px;
+	margin-top: auto;
 	font-family: var(--tertiaryFont);
 	font-size: var(--miniSize);
 	line-height: 24px;
@@ -74,6 +75,36 @@
 }
 
 
+
+@media only screen and (max-width: 915px) {
+	.Review {
+		height: 232px;
+		width: 360px;
+	}
+
+	.Review .reviewHolder p {
+		margin-top: 28px;
+		font-family: var(--tertiaryFont);
+		font-weight: var(--regular);
+	}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+	.Review {
+		height: 232px;
+		width: 360px;
+	}
+
+	.Review .reviewHolder p {
+		margin-top: 28px;
+		font-family: var(--tertiaryFont);
+		font-weight: var(--regular);
+	}
+
+}
+
 @media only screen and (max-width: 480px) {
 	.Review {
 		height: 232px;
@@ -87,6 +118,8 @@
 	}
 
 }
+
+
 
 
 

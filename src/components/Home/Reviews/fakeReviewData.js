@@ -10,19 +10,19 @@ const fakeReviewData = [
 		countryImg: usa,
 		countryName: 'PALO ALTO, CA',
 		reviewerName: 'Hellen Jummy',
-		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi assumenda nostrum eligendi assumenda nostrum.'
+		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi'
 	},{
 		reviewerImg: isaac,
 		countryImg: itali,
 		countryName: 'PALO ALTO, CA',
 		reviewerName: 'Isaac Oluwatemilorun',
-		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi assumenda nostrum eligendi assumenda nostrum.'
+		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi '
 	},{
 		reviewerImg: hellenJummy,
 		countryImg: usa,
 		countryName: 'PALO ALTO, CA',
 		reviewerName: 'Hellen Jummy',
-		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi assumenda nostrum eligendi assumenda nostrum.'
+		review: 'Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Saepe cum accusamus sequi, eligendi '
 	},
 ];
 
