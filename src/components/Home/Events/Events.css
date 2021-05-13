@@ -53,16 +53,38 @@
 }
 
 /*media queries*/
-@media only screen and (min-width: 1440px) {
+/*@media only screen and (min-width: 1440px) {
+	.Events .eventHolder{
+		--doubleMargin: calc(var(--margin) * 2);
+		width: calc(100vw - var(--doubleMargin));
+	}
+}*/
+
+@media only screen and (min-width: 1224px) {
 	.Events .eventHolder{
 		--doubleMargin: calc(var(--margin) * 2);
 		width: calc(100vw - var(--doubleMargin));
 	}
 }
 
+@media only screen and (max-width: 1223px) {
+	.Events .eventHolder{
+		--doubleMargin: calc(var(--margin) * 2);
+		width: calc(100vw - var(--doubleMargin));
+	}
+
+	.Events .eventHolder > *:last-child{
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.Events .upcomingShows {
 		margin-top: 250px;
+	}
+
+	.Events .eventHolder > *:last-child{
+		display: none;
 	}
 
 	.Events .scroll {
@@ -88,7 +110,7 @@
 
 	.Events .eventHolder{
 		--doubleMargin: calc(var(--miniMargin) * 2);
-		width: calc(1200px - var(--doubleMargin));
+		width: calc(1000px - var(--doubleMargin));
 		grid-column-gap: 25px;
 	}
 

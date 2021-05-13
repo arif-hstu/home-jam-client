@@ -19,7 +19,7 @@ function Events() {
 					className='scroll'
 					direction="horizontal"
 					width={'100vw'}
-					height={'395px'}
+					height={'500px'}
 					wheelEnabled={false}
 				>
 					<div className="eventHolder">

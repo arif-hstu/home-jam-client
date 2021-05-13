@@ -74,8 +74,6 @@
 	color: #E5C558;
 }
 
-
-
 @media only screen and (max-width: 915px) {
 	.Review {
 		height: 232px;
@@ -89,7 +87,6 @@
 	}
 
 }
-
 
 @media only screen and (max-width: 768px) {
 	.Review {

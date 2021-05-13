@@ -107,3 +107,79 @@
 	top: -4.5px;
 	right: 42px;
 }
+
+@media only screen and (min-width: 1224px) and (max-width: 1439px) {
+	.Event {
+		height: 27.5vw;
+		width: 18.5vw;
+		background-color: #111229;
+		border-radius: 8px 8px 8px 8px;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		justify-self: center;
+	}
+
+	.Event .infoHolder {
+		margin-top: 0;
+	}
+
+	.Event .info {
+		width: 10vw;
+	}
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1100px) {
+	.Event {
+		height: 37vw;
+		width: 25vw;
+		background-color: #111229;
+		border-radius: 8px 8px 8px 8px;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		justify-self: center;
+	}
+
+	.Event .infoHolder {
+		margin-top: 0;
+	}
+
+	.Event .info {
+		width: 13vw;
+	}
+
+	.Event  > h4 {
+		margin-top: 2vw;
+		font-size: 19px;
+		line-height: 25px;
+		margin-bottom: 2vw;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 949px) {
+		.Event {
+		height: 37vw;
+		width: 25vw;
+		background-color: #111229;
+		border-radius: 8px 8px 8px 8px;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		justify-self: center;
+	}
+
+	.Event .infoHolder {
+		margin-top: 0;
+	}
+
+	.Event .info {
+		width: 13vw;
+	}
+	.Event  > h4 {
+		margin-top: 2vw;
+		font-size: 17px;
+		line-height: 18px;
+		margin-bottom: 0.5vw;
+	}
+}
