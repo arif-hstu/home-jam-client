@@ -74,7 +74,7 @@
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
 	.Review {
 		height: 232px;
 		width: 328px;
@@ -87,6 +87,7 @@
 	}
 
 }
+
 
 
 
