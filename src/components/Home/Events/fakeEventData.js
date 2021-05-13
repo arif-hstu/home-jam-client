@@ -11,7 +11,7 @@ const fakeEventData = [
 	},{
 		artistImg: vijayYesudas,
 		category: 'Bollywood',
-		artistName: 'Vijay Yasudas'
+		artistName: 'Vijay Yesudas'
 	},{
 		artistImg: andreaJeremiah,
 		category: 'Folk',
