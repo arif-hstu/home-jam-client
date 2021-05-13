@@ -13,7 +13,6 @@
 	--doubleMargin: calc(var(--margin) * 2);
 	width: calc(1440px - var(--doubleMargin));
 	top: 8px;
-	right: 18px;
 	display: flex;
 	justify-content: space-between;
 	margin-left: var(--margin);

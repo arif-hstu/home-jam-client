@@ -15,7 +15,6 @@
 	--doubleMargin: calc(var(--margin) * 2);
 	width: calc(1440px - var(--doubleMargin));
 	top: 8px;
-	right: 8px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 16px;
