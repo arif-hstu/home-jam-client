@@ -69,7 +69,7 @@
 	}
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
 	.Events .upcomingShows {
 		margin-top: 150px;
 		margin-left: var(--miniMargin);
@@ -108,6 +108,44 @@
 
 	.Events .upcomingShows .titleHolder small {
 		font-size: 14px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.Events .upcomingShows {
+		margin-top: 250px;
+	}
+
+	.Events .scroll {
+		top: 1000px;
+	}
+
+	.Events .upcomingShows .titleHolder p{
+		z-index: 998;
+	}
+
+	.Events .upcomingShows .titleHolder h3 {
+		font-family: var(--primaryFont);
+		font-size: 22px;	
+		font-weight: var(--regular);
+		line-height: 28px;
+		z-index: 995;
+		width: 50vw;
+	}
+
+	.Events .upcomingShows .titleHolder h3::after {
+		top: 34px;
+	}
+
+	.Events .eventHolder{
+		--doubleMargin: calc(var(--miniMargin) * 2);
+		width: calc(1200px - var(--doubleMargin));
+		grid-column-gap: 25px;
+	}
+
+	.Events .upcomingShows .titleHolder small {
+		font-size: 16px;
 	}
 
 }
