@@ -27,7 +27,7 @@ function Reviews() {
 					height={'260px'}
 					wheelEnabled={false}
 				>
-					<div className="eventHolder">
+					<div className="reviewHolder">
 						{
 							fakeReviewData.map((review, key) => <Review key={key} review={review} />)
 						}

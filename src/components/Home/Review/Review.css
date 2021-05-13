@@ -48,6 +48,7 @@
 
 .Review .reviewHolder {
 	margin: 0px 24px 36px 24px;
+	width: 300%;
 }
 
 .Review .reviewHolder p {
@@ -70,6 +71,21 @@
 	font-size: 11px;
 	line-height: 16px;
 	color: #E5C558;
+}
+
+
+@media only screen and (max-width: 375px) {
+	.Review {
+		height: 232px;
+		width: 328px;
+	}
+
+	.Review .reviewHolder p {
+		margin-top: 28px;
+		font-family: var(--tertiaryFont);
+		font-weight: var(--regular);
+	}
+
 }
 
 
