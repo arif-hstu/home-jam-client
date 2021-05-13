@@ -13,19 +13,10 @@
 	--doubleMargin: calc(var(--margin) * 2);
 	width: calc(1440px - var(--doubleMargin));
 	top: 8px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-column-gap: 16px;
+	display: flex;
+	justify-content: space-between;
 	margin-left: var(--margin);
 	margin-right: var(--margin);
-}
-
-.Events .eventHolder > *:first-child {
-	margin-right: auto;
-}
-
-.Events .eventHolder > *:last-child {
-	margin-left: auto;
 }
 
 .Events .upcomingShows .titleHolder {
@@ -69,49 +60,6 @@
 	}
 }
 
-@media only screen and (max-width: 480px) {
-	.Events .upcomingShows {
-		margin-top: 150px;
-		margin-left: var(--miniMargin);
-		margin-right: var(--miniMargin);
-	}
-
-	.Events .scroll {
-		top: 910px;
-		left: 0;
-	}
-
-	.Events .upcomingShows .titleHolder p{
-		z-index: 998;
-	}
-
-	.Events .upcomingShows .titleHolder h3 {
-		font-family: var(--primaryFont);
-		font-size: 20px;	
-		font-weight: var(--regular);
-		line-height: 24px;
-		z-index: 995;
-		width: 50vw;
-	}
-
-	.Events .upcomingShows .titleHolder h3::after {
-		top: 32px;
-	}
-
-	.Events .eventHolder{
-		--doubleMargin: calc(var(--miniMargin) * 2);
-		width: calc(1200px - var(--doubleMargin));
-		grid-column-gap: 25px;
-		margin-left: var(--miniMargin);
-		margin-right: var(--miniMargin);
-	}
-
-	.Events .upcomingShows .titleHolder small {
-		font-size: 14px;
-	}
-
-}
-
 @media only screen and (max-width: 768px) {
 	.Events .upcomingShows {
 		margin-top: 250px;
@@ -149,3 +97,49 @@
 	}
 
 }
+
+@media only screen and (max-width: 480px) {
+	.Events .upcomingShows {
+		margin-top: 150px;
+	}
+
+	.Events .scroll {
+		top: 910px;
+	}
+
+	.Events .upcomingShows .titleHolder {
+		margin-left: calc(var(--miniMargin) * -1);
+		margin-right: calc(var(--miniMargin) * -1);
+	}
+
+	.Events .upcomingShows .titleHolder p{
+		z-index: 998;
+	}
+
+	.Events .upcomingShows .titleHolder h3 {
+		font-family: var(--primaryFont);
+		font-size: 22px;	
+		font-weight: var(--regular);
+		line-height: 28px;
+		z-index: 995;
+		width: 65vw;
+		word-wrap: nowrap;
+	}
+
+	.Events .upcomingShows .titleHolder h3::after {
+		top: 34px;
+	}
+
+	.Events .eventHolder{
+		--doubleMargin: calc(var(--miniMargin) * 2);
+		width: calc(1200px - var(--doubleMargin));
+		grid-column-gap: 25px;
+		margin-left: var(--miniMargin);
+	}
+
+	.Events .upcomingShows .titleHolder small {
+		font-size: 16px;
+	}
+
+}
+

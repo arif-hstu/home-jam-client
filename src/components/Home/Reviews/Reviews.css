@@ -89,6 +89,35 @@
 	}
 }
 
+
+@media only screen and (max-width: 768px) {
+	.Reviews .allReviews {
+		margin-top: 470px;
+	}
+
+	.Reviews .scroll {
+		top: 1550px;
+	}
+
+	.Reviews .allReviews .titleHolder p{
+		z-index: 998;
+	}
+
+	.Reviews .allReviews .titleHolder h3 {
+		font-family: var(--primaryFont);
+		font-size: 22px;	
+		font-weight: var(--regular);
+		line-height: 28px;
+		z-index: 995;
+		width: 50vw;
+	}
+
+	.Reviews .allReviews .titleHolder h3::after {
+		top: 34px;
+	}
+
+}
+
 @media only screen and (max-width: 480px) {
 	.Events .allReviews .titleHolder p{
 		z-index: 998;
@@ -122,78 +151,7 @@
 
 	.Reviews .scroll {
 		left: 0;
-		top: 1480px;
+		top: 1445px;
 	}
 
 }
-
-@media only screen and (max-width: 768px) {
-	.Reviews .allReviews {
-		margin-top: 470px;
-	}
-
-	.Reviews .scroll {
-		top: 1550px;
-	}
-
-	.Reviews .allReviews .titleHolder p{
-		z-index: 998;
-	}
-
-	.Reviews .allReviews .titleHolder h3 {
-		font-family: var(--primaryFont);
-		font-size: 22px;	
-		font-weight: var(--regular);
-		line-height: 28px;
-		z-index: 995;
-		width: 50vw;
-	}
-
-	.Reviews .allReviews .titleHolder h3::after {
-		top: 34px;
-	}
-
-}
-
-
-
-
-/*@media only screen and (max-width: 768px) {
-	.Events .allReviews {
-		margin-top: 250px;
-	}
-
-	.Events .scroll {
-		top: 1000px;
-	}
-
-	.Events .allReviews .titleHolder p{
-		z-index: 998;
-	}
-
-	.Events .allReviews .titleHolder h3 {
-		font-family: var(--primaryFont);
-		font-size: 22px;	
-		font-weight: var(--regular);
-		line-height: 28px;
-		z-index: 995;
-		width: 50vw;
-	}
-
-	.Events .allReviews .titleHolder h3::after {
-		top: 34px;
-	}
-
-	.Events .eventHolder{
-		--doubleMargin: calc(var(--miniMargin) * 2);
-		width: calc(1200px - var(--doubleMargin));
-		grid-column-gap: 25px;
-	}
-
-	.Events .allReviews .titleHolder small {
-		font-size: 16px;
-	}
-
-}*/
-
-

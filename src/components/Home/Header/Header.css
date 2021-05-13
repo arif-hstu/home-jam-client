@@ -25,6 +25,7 @@
 	top: 0;
 	left: 0;
 	z-index: 10;
+	transform: translateY(1px);
 }
 
 .Header .mainContent {
@@ -124,11 +125,16 @@
 }
 
 /*media queries*/
+@media only screen and (max-width: 1350px) {
+	.Header .mainContent .dashboardHolder{
+		margin-left: 6%;
+	}
+}
+
 @media only screen and (max-width: 480px) {
 	.Header {
 		background-size: auto 90% ;
 		background-repeat: no-repeat;
-		height: 658px;
 		background-position: left 55% top 0%;
 	}
 
