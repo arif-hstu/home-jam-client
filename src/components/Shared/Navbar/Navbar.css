@@ -41,7 +41,7 @@
 }
 
 /*media queries*/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
 	.Navbar {
 		margin-left: var(--miniMargin);
 		margin-right: var(--miniMargin);

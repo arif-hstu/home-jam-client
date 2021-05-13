@@ -13,6 +13,10 @@
 	right: 0;
 }
 
+.Header .titleHolder {
+	width: 80%;
+}
+
 .Header .overlay {
 	background: linear-gradient(180deg, rgba(5, 11, 20, 0.28) 0%, rgba(1, 13, 32, 0.69) 67.53%, #0A0B1A 85.33%);
 	height: 860px;
@@ -119,9 +123,8 @@
 	line-height: 32px;
 }
 
-
 /*media queries*/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
 	.Header {
 		background-size: auto 90% ;
 		background-repeat: no-repeat;
@@ -136,7 +139,7 @@
 	}
 
 	.Header .titleHolder {
-		width: 90%;
+		width: 80%;
 	}
 	
 	.Header .titleHolder p {
@@ -163,6 +166,10 @@
 		width: calc(800px - var(--doubleMargin));
 	}
 
+	.Header .mainContent .dashboardHolder{
+		margin-left: var(--miniMargin);
+	}
+
 	.Header .dashboard > * > .infoHolder small {
 		font-family: var(--tertiaryFont);
 		font-size: 13px;
@@ -172,4 +179,29 @@
 	.Header .dashboard > * > .infoHolder .counter {
 		margin: -5px;
 	}
+}
+
+@media only screen and (max-width: 768px) {
+	.Header {
+		background-size: auto 120% ;
+		background-repeat: no-repeat;
+		height: 658px;
+		background-position: left 55% top 0%;
+	}
+
+	.Header .titleHolder h2 {
+		font-size: 60px;
+		line-height: 78px;
+		margin-bottom: 5px;
+	}
+
+	.Header .titleHolder {
+		width: 80%;
+	}
+	
+	.Header .titleHolder p {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
 }
