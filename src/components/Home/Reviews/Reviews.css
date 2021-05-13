@@ -37,8 +37,14 @@
 }
 
 .Reviews .allReviews .titleHolder .pagination{
-	display: flex;
-	justify-content: space-between;
+	width: max-content;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+}
+
+.Reviews .allReviews .titleHolder .pagination > *{
+	margin-left: auto;
 }
 
 .Reviews .allReviews .titleHolder .pagination p{
@@ -51,16 +57,11 @@
 }
 
 .Reviews .allReviews .titleHolder .pagination p:last-of-type{
-	margin-right: 26.5px;
 	opacity: 0.5;
 }
 
 .Reviews .pagination > img {
 	opacity: 0.8;
-}
-
-.Reviews .pagination > img:first-of-type {
-	margin-right: 21px;
 }
 
 .Reviews .allReviews .titleHolder h3 {
