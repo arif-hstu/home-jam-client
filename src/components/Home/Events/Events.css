@@ -154,7 +154,7 @@
 
 	.Events .eventHolder{
 		--doubleMargin: calc(var(--miniMargin) * 2);
-		width: calc(1200px - var(--doubleMargin));
+		width: calc(1000px - var(--doubleMargin));
 		grid-column-gap: 25px;
 		margin-left: var(--miniMargin);
 	}
