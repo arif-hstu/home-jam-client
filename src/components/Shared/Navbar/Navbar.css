@@ -14,6 +14,10 @@
 	width: 86px;
 }
 
+.Navbar .navHolder img:last-of-type {
+	display: none;
+}
+
 .Navbar .navHolder {
 	margin-left: auto;
 	width: 297px;
@@ -22,17 +26,13 @@
 	grid-template-columns: 8.62px 1fr 1fr 1fr 0.5fr;
 }
 
-.Navbar .navHolder img:last-of-type {
-	display: none;
-}
-
 .Navbar .navHolder > *{
 	margin: auto;
 	color: var(--primaryColor);
 	text-decoration: none;
 }
 
-.Navbar .navHolder > *:last-child{
+.Navbar .navHolder > *:nth-child(5){
 	margin-right: 0;
 }
 

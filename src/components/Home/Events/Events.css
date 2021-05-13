@@ -13,10 +13,10 @@
 	--doubleMargin: calc(var(--margin) * 2);
 	width: calc(1440px - var(--doubleMargin));
 	top: 8px;
+	right: 18px;
 	display: flex;
 	justify-content: space-between;
 	margin-left: var(--margin);
-	margin-right: var(--margin);
 }
 
 .Events .upcomingShows .titleHolder {
@@ -51,14 +51,6 @@
 	font-weight: 600;
 	line-height: 24px;
 }
-
-/*media queries*/
-/*@media only screen and (min-width: 1440px) {
-	.Events .eventHolder{
-		--doubleMargin: calc(var(--margin) * 2);
-		width: calc(100vw - var(--doubleMargin));
-	}
-}*/
 
 @media only screen and (min-width: 1224px) {
 	.Events .eventHolder{
