@@ -1,5 +1,5 @@
 ## HomeJam
-Welcome to Homejam — where nothing stands between you & your favorite artists.
+Welcome to HomeJam — where nothing stands between you & your favorite artists.
 
 ## Live app:
 https://arif-test.netlify.app/
