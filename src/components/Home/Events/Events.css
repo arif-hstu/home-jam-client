@@ -70,8 +70,44 @@
 }
 
 @media only screen and (max-width: 375px) {
+	.Events .upcomingShows {
+		margin-top: 150px;
+		margin-left: var(--miniMargin);
+		margin-right: var(--miniMargin);
+	}
+
 	.Events .scroll {
-		top: 851px;
+		top: 910px;
 		left: 0;
 	}
+
+	.Events .upcomingShows .titleHolder p{
+		z-index: 998;
+	}
+
+	.Events .upcomingShows .titleHolder h3 {
+		font-family: var(--primaryFont);
+		font-size: 20px;	
+		font-weight: var(--regular);
+		line-height: 24px;
+		z-index: 995;
+		width: 50vw;
+	}
+
+	.Events .upcomingShows .titleHolder h3::after {
+		top: 32px;
+	}
+
+	.Events .eventHolder{
+		--doubleMargin: calc(var(--miniMargin) * 2);
+		width: calc(1200px - var(--doubleMargin));
+		grid-column-gap: 25px;
+		margin-left: var(--miniMargin);
+		margin-right: var(--miniMargin);
+	}
+
+	.Events .upcomingShows .titleHolder small {
+		font-size: 14px;
+	}
+
 }
