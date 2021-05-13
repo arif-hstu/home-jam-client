@@ -18,7 +18,7 @@ function Header() {
 			<div className="mainContent">
 				<div className="titleHolder">
 					<h2>Cari Cari</h2>
-					<p>Live from their sofa to yours. Get closer to your favorite <br />artists, and never miss out.</p>
+					<p>Live from their sofa to yours. Get closer to your favorite artists, and never miss out.</p>
 				</div>
 				<Scroll
 					className='scroll'

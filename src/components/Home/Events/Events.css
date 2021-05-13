@@ -68,3 +68,10 @@
 		width: calc(100vw - var(--doubleMargin));
 	}
 }
+
+@media only screen and (max-width: 375px) {
+	.Events .scroll {
+		top: 851px;
+		left: 0;
+	}
+}

@@ -120,5 +120,36 @@
 
 
 /*media queries*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 375px) {
+	.Header {
+		background-size: auto 90% ;
+		background-repeat: no-repeat;
+		height: 658px;
+		background-position: left 55% top 0%;
+	}
+
+	.Header .titleHolder h2 {
+		font-size: 40px;
+		line-height: 48px;
+		margin-bottom: 5px;
+	}
+
+	.Header .titleHolder {
+		width: 90%;
+	}
+	
+	.Header .titleHolder p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.Header .mainContent {
+		margin-left: var(--miniMargin);
+		margin-right: var(--miniMargin);
+		top: 248px;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+	}
 }

@@ -22,6 +22,10 @@
 	grid-template-columns: 8.62px 1fr 1fr 1fr 0.5fr;
 }
 
+.Navbar .navHolder img:last-of-type {
+	display: none;
+}
+
 .Navbar .navHolder > *{
 	margin: auto;
 	color: var(--primaryColor);
@@ -37,6 +41,35 @@
 }
 
 /*media queries*/
-@media only screen and (max-width: 325) {
+@media only screen and (max-width: 375px) {
+	.Navbar {
+		margin-left: var(--miniMargin);
+		margin-right: var(--miniMargin);
+	}
 
+	.Navbar .logHolder img {
+		height: 20px;
+		width: 10px;
+	}
+	
+	.Navbar .navHolder {
+		margin-left: auto;
+		width: 116px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.Navbar .navHolder img:last-of-type {
+		display: block;
+	}
+
+	.Navbar .navHolder img {
+		display: block;
+		width: 19.87px;
+		margin: 0;
+	}
+
+	.Navbar .hidable {
+		display: none;
+	}
 }
