@@ -74,7 +74,7 @@
 	color: #E5C558;
 }
 
-@media only screen and (max-width: 915px) {
+@media only screen and (max-width: 768px) {
 	.Review {
 		height: 232px;
 		width: 360px;
@@ -88,15 +88,21 @@
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 769px) and (max-width: 914px) {
 	.Review {
-		height: 232px;
-		width: 360px;
+		width: 37vw;
+	}
+
+	.Review .reviewHolder {
+		margin: 0px 24px 3vw 24px;
+		width: 60vw;
 	}
 
 	.Review .reviewHolder p {
-		margin-top: 28px;
+		margin-top: auto;
 		font-family: var(--tertiaryFont);
+		font-size: var(--miniSize);
+		line-height: 24px;
 		font-weight: var(--regular);
 	}
 

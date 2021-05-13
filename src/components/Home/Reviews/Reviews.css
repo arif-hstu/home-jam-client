@@ -98,6 +98,16 @@
 	}
 }
 
+@media only screen and (min-width: 769px) and (max-width: 914px) {
+	.Reviews .reviewHolder{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 5px;
+		grid-row-gap: 30px;
+	}
+}
+
+
 @media only screen and (max-width: 768px) {
 	.Reviews .allReviews {
 		margin-top: 470px;
