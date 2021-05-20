@@ -2,8 +2,8 @@
 	position: absolute;
 	background-color: rgba(16, 16, 42, 0.95);
 	z-index: 998;
-	left: -5vw;
-	width: 100vw;
+	left: -8vw;
+	width: 109vw;
 	height: 100vh;
 	top: -1%;
 
@@ -11,7 +11,14 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-size: var(--font-larger);
+	font-size: 12px;
+}
+
+.Menu #close {
+	position: absolute;
+	width: 12px;
+	top: 25px;
+	right: 10vw;
 }
 
 .Menu .menu-area .linkHolder {
@@ -28,11 +35,4 @@
   color: white;
   text-decoration: none;
   padding: 5px;
-}
-
-.Menu .menu-area .linkHolder > *:hover {
-	background-color: var(--dark);
-	color: var(--primary);
-	padding: 5px 10px;
-	border-radius: 5px;
 }

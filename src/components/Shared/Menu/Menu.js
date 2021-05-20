@@ -6,6 +6,7 @@ import './Menu.css';
 
 import { MenuOpenContext } from '../../../App';
 import menu from '../../../resources/icons/menu.svg';
+import close from '../../../resources/icons/close.svg';
 import { motion } from 'framer-motion';
 
 function Menu() {
@@ -14,27 +15,37 @@ function Menu() {
 
 	const menu_variants = {
 		open: { opacity: 1, x: 0 },
-		hidden: { opacity: 0, x: 300 }
+		hidden: { opacity: 0, x: '100vw' }
 	};
 
 	return (
 		<div className="Menu">
 			<motion.div initial="hidden" animate={isMenuOpen ? "open" : "hidden"}>
-
 				<img
+					id='menuImage'
 					style={{cursor:'pointer'}} 
-					onClick={() => setIsMenuOpen(!isMenuOpen)}  
+					onClick={() => {
+						setIsMenuOpen(!isMenuOpen);
+						window.document.body.style.overflowY = "hidden";
+					}}  
 					src={menu} 
 					alt="Menu" 
 				/>
-
 				<motion.div className="menu-area" variants={menu_variants}>
+					<img
+						style={{cursor: 'pointer'}}
+						onClick={() => {
+							setIsMenuOpen(!isMenuOpen);
+							window.document.body.style.overflowY = "visible";
+						}} 
+						id='close' 
+						src={close} 
+						alt="Cross" />
 					<div className='linkHolder'>
 						<Link onClick={() => setIsMenuOpen(!isMenuOpen)} to='/'>Home</Link>
-						<Link onClick={() => setIsMenuOpen(!isMenuOpen)} to='/expertise'>Expertise</Link>
-						<Link onClick={() => setIsMenuOpen(!isMenuOpen)}to='/projects'>Projects</Link>
-						<Link onClick={() => setIsMenuOpen(!isMenuOpen)}to='/blog'>Blog</Link>
-						<Link onClick={() => setIsMenuOpen(!isMenuOpen)}to='/contact'>Contact Me</Link>
+						<Link onClick={() => setIsMenuOpen(!isMenuOpen)} to='/notFound'>Search</Link>
+						<Link onClick={() => setIsMenuOpen(!isMenuOpen)}to='/notFound'>Help</Link>
+						<Link onClick={() => setIsMenuOpen(!isMenuOpen)}to='/notFound'>Account</Link>
 					</div>
 				</motion.div>
 			</motion.div>

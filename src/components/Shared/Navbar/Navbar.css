@@ -14,10 +14,6 @@
 	width: 86px;
 }
 
-.Navbar .navHolder img:last-of-type {
-	display: none;
-}
-
 .Navbar .navHolder #cart{
 	cursor: pointer;
 }
@@ -30,7 +26,7 @@
 	grid-template-columns: 8.62px 1fr 1fr 1fr 0.5fr;
 }
 
-.Navbar .navHolder > *{
+.Navbar .navHolder > * {
 	margin: auto;
 	color: var(--primaryColor);
 	text-decoration: none;
@@ -59,8 +55,8 @@
 	.Navbar .navHolder {
 		margin-left: auto;
 		width: 116px;
-		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 1fr 0.8fr 0.8fr;
 	}
 
 	.Navbar .navHolder img:last-of-type {
@@ -75,5 +71,10 @@
 
 	.Navbar .hidable {
 		display: none;
+	}
+
+	.Navbar .navHolder > *:nth-child(6) {
+		display: block;
+		margin-right: 0;
 	}
 }
