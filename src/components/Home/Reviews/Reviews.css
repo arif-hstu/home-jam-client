@@ -202,7 +202,7 @@
 		width: calc(1100px - var(--doubleMargin));
 		grid-column-gap: 25px;
 		margin-left: var(--miniMargin);
-		margin-right: var(--miniMargin);
+		margin-right: calc(var(--miniMargin) * 2);
 	}
 
 	.Reviews .allReviews .pagination  > *{
@@ -240,7 +240,7 @@
 		--doubleMargin: calc(var(--miniMargin) * 2);
 		width: calc(950px - var(--doubleMargin));
 		margin-left: var(--miniMargin);
-		margin-right: var(--miniMargin);
+		margin-right: calc(var(--miniMargin) * 2);
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-column-gap: 16px;
@@ -272,7 +272,7 @@
 		width: calc(800px - var(--doubleMargin));
 		grid-column-gap: 25px;
 		margin-left: var(--miniMargin);
-		margin-right: var(--miniMargin);
+		margin-right: calc(var(--miniMargin) * 2.9);
 	}
 }
 

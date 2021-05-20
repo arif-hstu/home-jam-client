@@ -149,7 +149,7 @@
 		width: calc(1250px - var(--doubleMargin));
 		grid-column-gap: 25px;
 		margin-left: var(--miniMargin);
-		margin-right: var(--miniMargin);
+		margin-right: calc(var(--miniMargin) * 2);
 	}
 
 	.Events .upcomingShows .titleHolder small {
@@ -164,11 +164,11 @@
 	}
 
 	.Events .eventHolder {
-		--doubleMargin: calc(var(--miniMargin) * 2);
+		--doubleMargin: calc(var(--miniMargin) * 5);
 		width: calc(1100px - var(--doubleMargin));
-		grid-column-gap: 25px;
+		grid-column-gap: 0px;
 		margin-left: var(--miniMargin);
-		margin-right: var(--miniMargin);
+		margin-right: calc(var(--miniMargin) * 2.5);
 	}
 
 	.Events .upcomingShows .titleHolder small {
