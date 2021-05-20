@@ -74,6 +74,7 @@
 	font-family: var(--tertiaryFont);
 	font-size: var(--miniSize);
 	color: #0259EB;
+	cursor: pointer;
 }
 
 .Event .info {

@@ -18,6 +18,10 @@
 	display: none;
 }
 
+.Navbar .navHolder #cart{
+	cursor: pointer;
+}
+
 .Navbar .navHolder {
 	margin-left: auto;
 	width: 297px;

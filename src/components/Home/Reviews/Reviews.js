@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Scroll } from 'framer';
 
 import './Reviews.css';
@@ -8,6 +9,7 @@ import leftArrow from '../../../resources/icons/leftArrow.svg';
 import rightArrow from '../../../resources/icons/rightArrow.svg';
 
 function Reviews() {
+	const history = useHistory();
 	return (
 		<div className='Reviews'>
 			<div className="allReviews">
@@ -16,8 +18,18 @@ function Reviews() {
 					<div className="pagination">
 						<p>1</p>
 						<p>/ 12</p>
-						<img src={leftArrow} alt="Arrow" />
-						<img src={rightArrow} alt="Arrow" />
+						<img
+							style={{cursor:'pointer'}} 
+							onClick={() => history.push('/notFound')} 
+							src={leftArrow} 
+							alt="Arrow" 
+						/>
+						<img
+							style={{cursor:'pointer'}} 
+							onClick={() => history.push('/notFound')} 
+							src={rightArrow} 
+							alt="Arrow" 
+						/>
 					</div> 
 				</div>
 				<Scroll

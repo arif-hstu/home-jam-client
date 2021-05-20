@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory, Link } from "react-router-dom";
 
 import './Event.css';
 import bennyDayal from '../../../resources/images/bennyDayal.png';
@@ -9,22 +10,39 @@ import ticketFill from '../../../resources/icons/ticketFill.svg';
 function Event(props) {
 	const { artistImg, artistName, category } = props.event;
 	const [alterTicket, setAlterTicket] = useState(false);
-	
+
+	const history = useHistory();
 	return (
 		<div className="Event">
-			<img src={artistImg} alt={artistName} />
-			<p className="highlight">
+			<img 
+				style={{cursor:'pointer'}} 
+				onClick={() => history.push('/notFound')}
+				src={artistImg} 
+				alt={artistName} 
+			/>
+
+			<p 
+				style={{cursor:'pointer'}} 
+				onClick={() => history.push('/notFound')}
+				className="highlight">
 				{category}
 			</p>
-			<h4>
+			<h4 
+				style={{cursor: 'pointer'}} 
+				onClick={() => history.push('/notFound')}
+			>
 				{artistName}
 			</h4>
 			<div className="infoHolder">
 				<div className="info">
-					<p>
+					<p onClick={() => history.push('/notFound')}>
 						More Info
 					</p>
-					<img src={arrow} alt="Arrow" />
+					<img 
+						style={{cursor: 'pointer'}} 
+						onClick={() => history.push('/notFound')} 
+						src={arrow} alt="Arrow" 
+					/>
 				</div>
 				<div
 					onMouseEnter={() => setAlterTicket(true)}
@@ -33,7 +51,11 @@ function Event(props) {
 				>
 					{
 						alterTicket ? 
-						<img src={ticketFill} alt="Ticket" /> :
+						<img 
+							onClick={() => history.push('/notFound')} 
+							src={ticketFill} 
+							alt="Ticket" 
+						/> :
 						<img src={ticket} alt="Ticket" />
 					}
 				</div>
