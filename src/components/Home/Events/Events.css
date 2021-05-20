@@ -64,7 +64,7 @@
 		width: calc(100vw - var(--doubleMargin));
 	}
 
-	.Events .eventHolder > *:last-child{
+	.Events .eventHolder > *:nth-child(4){
 		display: none;
 	}
 }
@@ -74,8 +74,8 @@
 		margin-top: 250px;
 	}
 
-	.Events .eventHolder > *:last-child{
-		display: none;
+	.Events .eventHolder > *:nth-child(4){
+		display: block;
 	}
 
 	.Events .scroll {
@@ -101,8 +101,10 @@
 
 	.Events .eventHolder{
 		--doubleMargin: calc(var(--miniMargin) * 2);
-		width: calc(1000px - var(--doubleMargin));
+		width: calc(1250px - var(--doubleMargin));
 		grid-column-gap: 25px;
+		margin-left: var(--margin);
+		margin-right: var(--margin);
 	}
 
 	.Events .upcomingShows .titleHolder small {
@@ -145,9 +147,10 @@
 
 	.Events .eventHolder{
 		--doubleMargin: calc(var(--miniMargin) * 2);
-		width: calc(1000px - var(--doubleMargin));
+		width: calc(1250px - var(--doubleMargin));
 		grid-column-gap: 25px;
 		margin-left: var(--miniMargin);
+		margin-right: var(--miniMargin);
 	}
 
 	.Events .upcomingShows .titleHolder small {
@@ -156,5 +159,19 @@
 
 }
 
+@media only screen and (max-width: 320px) {
+	.Events .upcomingShows .titleHolder p{
+		z-index: 998;
+	}
+
+	.Events .eventHolder{
+		--doubleMargin: calc(var(--miniMargin) * 2);
+		width: calc(1100px - var(--doubleMargin));
+		grid-column-gap: 25px;
+		margin-left: var(--miniMargin);
+		margin-right: var(--miniMargin);
+	}
+
+}
 
 

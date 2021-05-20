@@ -91,13 +91,14 @@
 }
 
 /*media queries*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 	.Reviews .reviewHolder{
 		--doubleMargin: calc(var(--margin) * 2);
 		width: calc(100vw - var(--doubleMargin));
 	}
 }
 
+/*media queries*/
 @media only screen and (min-width: 769px) and (max-width: 914px) {
 	.Reviews .reviewHolder{
 		display: grid;
@@ -114,9 +115,18 @@
 		top: 1600px;
 	}
 }
-
-
+/*media queries*/
 @media only screen and (max-width: 769px) {
+	.Reviews .reviewHolder{
+		width: calc(1300px - var(--doubleMargin));
+		top: 8px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 16px;
+		margin-left: var(--margin);
+		margin-right: var(--margin);
+	}
+
 	.Reviews .allReviews {
 		margin-top: 470px;
 	}
@@ -143,7 +153,31 @@
 	}
 
 }
+/*media queries*/
+@media only screen and (width: 769px) {
+	.Reviews .allReviews {
+		margin-top: 350px;
+	}
 
+	.Reviews .scroll {
+		top: 1530px;
+	}
+
+	.Reviews .allReviews .titleHolder h3 {
+		font-family: var(--primaryFont);
+		font-size: var(--largerSize);	
+		font-weight: var(--regular);
+		line-height: 40px;
+		z-index: 995;
+		width: 50vw;
+	}
+
+	.Reviews .allReviews .titleHolder h3::after {
+		top: 34px;
+	}
+
+}
+/*media queries*/
 @media only screen and (max-width: 480px) {
 	.Events .allReviews .titleHolder p{
 		z-index: 998;

@@ -157,8 +157,8 @@
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 949px) {
-		.Event {
+@media only screen and (min-width: 769px) and (max-width: 949px) {
+	.Event {
 		height: 37vw;
 		width: 25vw;
 		background-color: #111229;
@@ -176,10 +176,41 @@
 	.Event .info {
 		width: 13vw;
 	}
-	.Event  > h4 {
+	.Event > h4 {
 		margin-top: 2vw;
 		font-size: 17px;
 		line-height: 18px;
 		margin-bottom: 0.5vw;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.Event {
+		height: 330px;
+		width: 235px;
+		background-color: #111229;
+	}
+
+	.Event  > img {
+		width: inherit;		
+	}
+
+	.Event .info {
+		width: 60vw;
+	}
+
+	.Event .infoHolder .info p {
+		margin: 0;
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 32px;
+		word-wrap: nowrap;
+	}
+
+	.Event  > h4 {
+		margin-top: 2vw;
+		font-size: 19px;
+		line-height: 25px;
+		margin-bottom: 2vw;
 	}
 }
