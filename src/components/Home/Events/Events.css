@@ -159,16 +159,21 @@
 }
 
 @media only screen and (max-width: 320px) {
-	.Events .upcomingShows .titleHolder p{
+	.Events .upcomingShows .titleHolder p {
 		z-index: 998;
 	}
 
-	.Events .eventHolder{
+	.Events .eventHolder {
 		--doubleMargin: calc(var(--miniMargin) * 2);
 		width: calc(1100px - var(--doubleMargin));
 		grid-column-gap: 25px;
 		margin-left: var(--miniMargin);
 		margin-right: var(--miniMargin);
+	}
+
+	.Events .upcomingShows .titleHolder small {
+		font-size: 13px;
+		line-height: 16px;
 	}
 
 }

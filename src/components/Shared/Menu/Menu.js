@@ -12,7 +12,13 @@ import { motion } from 'framer-motion';
 function Menu() {
 	const history = useHistory();
 	const [isMenuOpen, setIsMenuOpen] = useContext(MenuOpenContext);
+	const [isOverflowHidden, setIsOverflowHidden] = useState(false);
 
+
+	useEffect(() => {
+		isOverflowHidden ? window.document.body.style.overflowY = "hidden" :
+			window.document.body.style.overflowY = "visible"
+	}, [isOverflowHidden])
 	const menu_variants = {
 		open: { opacity: 1, x: 0 },
 		hidden: { opacity: 0, x: '100vw' }
@@ -26,7 +32,7 @@ function Menu() {
 					style={{cursor:'pointer'}} 
 					onClick={() => {
 						setIsMenuOpen(!isMenuOpen);
-						window.document.body.style.overflowY = "hidden";
+						setIsOverflowHidden(true);
 					}}  
 					src={menu} 
 					alt="Menu" 
@@ -36,7 +42,7 @@ function Menu() {
 						style={{cursor: 'pointer'}}
 						onClick={() => {
 							setIsMenuOpen(!isMenuOpen);
-							window.document.body.style.overflowY = "visible";
+							setIsOverflowHidden(false);
 						}} 
 						id='close' 
 						src={close} 
