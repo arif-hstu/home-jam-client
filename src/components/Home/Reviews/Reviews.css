@@ -215,3 +215,65 @@
 	}
 
 }
+
+/*media queries*/
+@media only screen and (max-width: 375px) {
+	.Reviews .allReviews {
+		margin-top: 430px;
+	}
+
+	.Reviews .scroll {
+		top: 1400px;
+	}
+
+	.Reviews .allReviews .titleHolder h3 {
+		font-family: var(--primaryFont);
+		font-size: 20px;	
+		font-weight: var(--regular);
+		line-height: 24px;
+		z-index: 995;
+		width: 20vw;
+		margin-left: calc(var(--miniMargin) * -1);
+	}
+
+	.Reviews .reviewHolder{
+		--doubleMargin: calc(var(--miniMargin) * 2);
+		width: calc(950px - var(--doubleMargin));
+		margin-left: var(--miniMargin);
+		margin-right: var(--miniMargin);
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 16px;
+	}
+}
+
+
+/*media queries*/
+@media only screen and (max-width: 320px) {
+	.Reviews .allReviews {
+		margin-top: 430px;
+	}
+
+	.Reviews .scroll {
+		top: 1400px;
+	}
+
+	.Reviews .allReviews .titleHolder h3 {
+		font-family: var(--primaryFont);
+		font-size: 20px;	
+		font-weight: var(--regular);
+		line-height: 24px;
+		z-index: 995;
+		width: 20vw;
+		margin-left: calc(var(--miniMargin) * -1);
+	}
+
+	.Reviews .reviewHolder{
+		--doubleMargin: calc(var(--miniMargin) * 2);
+		width: calc(800px - var(--doubleMargin));
+		grid-column-gap: 25px;
+		margin-left: var(--miniMargin);
+		margin-right: var(--miniMargin);
+	}
+}
+

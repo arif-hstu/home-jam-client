@@ -122,6 +122,48 @@
 
 }
 
+@media only screen and (max-width: 375px) {
+	.Review {
+		width: 77vw;
+	}
+
+	.Review .reviewHolder {
+		margin: 0px 24px 2vw 24px;
+		width: 77vw;
+	}
+
+	.Review .reviewHolder p {
+		width: 230%;
+		font-family: var(--tertiaryFont);
+		font-size: var(--miniSize);
+		line-height: 24px;
+		font-weight: var(--regular);
+	}
+
+}
+
+
+@media only screen and (max-width: 320px) {
+	.Review {
+		width: 75vw;
+	}
+
+	.Review .reviewHolder {
+		margin: 0px 24px 2vw 24px;
+		width: 75vw;
+	}
+
+	.Review .reviewHolder p {
+		width: 230%;
+		font-family: var(--tertiaryFont);
+		font-size: var(--miniSize);
+		line-height: 24px;
+		font-weight: var(--regular);
+	}
+
+}
+
+
 
 
 
