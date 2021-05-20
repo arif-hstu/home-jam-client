@@ -99,9 +99,9 @@
 	align-items: center;
 }
 
-.Header .dashboard > * > .infoHolder > img {
-	width: 28.01px;
-	height: 25px;
+.Header .dashboard > * > .infoHolder > img{
+	width: 30px;
+	height: 32px;
 	margin-bottom: 12px;
 }
 
