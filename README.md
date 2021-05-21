@@ -2,7 +2,7 @@
 Welcome to HomeJam — where nothing stands between you & your favorite artists.
 
 ## Live app:
-https://arif-test.netlify.app/
+https://arif-test-homejam.netlify.app
 
 ## What technology used in this project?
 
